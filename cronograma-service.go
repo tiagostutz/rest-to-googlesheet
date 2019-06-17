@@ -28,7 +28,7 @@ type Response struct {
 
 var ctx context.Context
 
-func preparaCronograma(w http.ResponseWriter, r *http.Request) {
+func prepareSheet(w http.ResponseWriter, r *http.Request) {
 
 	rq := Request{}
 	resp := Response{}
@@ -40,7 +40,7 @@ func preparaCronograma(w http.ResponseWriter, r *http.Request) {
 		log.Println("error unmarshaling request body: ", err)
 	}
 
-	criarPlanilha(rq)
+	createSheet(rq)
 
 	w.Header().Set("Content-Type", "application/json")
 	resp.Msg = "success"
@@ -49,7 +49,7 @@ func preparaCronograma(w http.ResponseWriter, r *http.Request) {
 	w.Write(rp)
 }
 
-func criarPlanilha(req Request) {
+func createSheet(req Request) {
 	b, err := ioutil.ReadFile("credentials.json")
 	if err != nil {
 		log.Fatalf("Unable to read client secret file: %v", err)

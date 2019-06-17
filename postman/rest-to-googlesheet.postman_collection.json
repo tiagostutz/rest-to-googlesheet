@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "4a0dcafe-6203-4166-8702-64eead6e5cfb",
+		"name": "rest-to-googlesheet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/new-sheet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"Guilherme Gomes Rocha\",\n\t\"rows\":[[\" \",\"Segunda\",\"Terça\",\"Quarta\",\"Quinta\",\"Sexta\",\"Sábado\",\"Domingo\"],\n\t[\"Grupo de matérias\",\"Direito Civil\",\"Direito Penal\",\"Direito Constitucional\",\"Ética\"],\n\t[\"08:30\", \"Direito Civil\"]\n\t]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/v0/new-sheet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v0",
+						"new-sheet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -16,7 +16,7 @@ func main() {
 
 	s := r.PathPrefix("/v0").Subrouter().StrictSlash(true)
 	s.NotFoundHandler = http.HandlerFunc(notFound)
-	s.HandleFunc("/novo-cronograma", streamHandler(preparaCronograma)).Methods("POST")
+	s.HandleFunc("/new-sheet", streamHandler(prepareSheet)).Methods("POST")
 
 	log.Fatal(http.ListenAndServe(":8000", logHandler(os.Stdout, r)))
 }
