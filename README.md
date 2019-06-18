@@ -10,7 +10,7 @@ git clone github.com/ggrcha/rest-to-googlesheet
 
 ```
 
-* Place client_secret.json on your local cloned dir
+* Place client_secret.json on your local cloned dir (take a look at [Google Developer Console](https://console.developers.google.com/project) for more info)
 
 * Create/use docker-compose.yml file
 
