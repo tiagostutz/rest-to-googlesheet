@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
 
-    api:
+    rest-to-googlesheet:
       image: ggrcha/rest-to-googlesheet
       build: .
       ports:
