@@ -20,7 +20,7 @@ version: "3.7"
 services:
 
     api:
-      image: ggrcha/rest-to-googlesheet
+      image: ggrcha/rest-to-googlesheet:0.0.1
       build: .
       ports:
         - 8000:8000
