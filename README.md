@@ -10,7 +10,7 @@ git clone github.com/ggrcha/rest-to-googlesheet
 
 ```
 
-* Place client_secret.json on your local cloned dir (take a look at [Google Developer Console](https://console.developers.google.com/project) for more info)
+* Place `client_secret.json` on your local cloned dir (take a look at [Google Developer Console](https://console.developers.google.com/project) for more info)
 
 * Create/use docker-compose.yml file
 
@@ -25,6 +25,6 @@ services:
       ports:
         - 8000:8000
 ```
-* Run "docker-compose up --build"
+* Run "docker-compose up"
 
 * You can make a test request using the Postman collection located at postman/ dir
