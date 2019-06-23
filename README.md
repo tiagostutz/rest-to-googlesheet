@@ -6,7 +6,7 @@ Simple service that converts a json request into a googlesheet
 * Checkout this repo 
 
 ```
-git clone github.com/ggrcha/rest-to-googlesheet
+git clone https://github.com/ggrcha/rest-to-googlesheet
 
 ```
 
